@@ -1,0 +1,68 @@
+.ui-body-b { background-color: #000; }
+
+@media screen and (min-width: 800px) {
+    body { background-color: #333 !important; }
+    .ui-body-b { max-width: 800px; margin: 0 auto; position: relative !important; }
+}
+
+h1.header-logo { text-indent: -9999px; width: 157px; height: 31px; background: url(../images/logo-sm.png) no-repeat; }
+.fullscreen .ui-header, .fullscreen .ui-footer, .fullscreen .item .content .details 
+{ display: none; }
+
+.ui-header .ui-title { margin: 0.6em auto 0.8em; }
+.ui-header .ui-btn-icon-notext,
+.ui-header .ui-btn-left { top: 13px; }
+.ui-header .ui-btn-left { left: 13px; }
+.ui-header .ui-btn-right { right: 13px; }
+
+#home, #list, #filter, #webshare { background: url(../images/bg-cuyamaca.jpg) no-repeat top center #000; background-size: auto 100%; } /* default portrait setting */
+body.landscape #home, 
+body.landscape #list,
+body.landscape #filter,
+body.landscape #webshare { background-size: 100% auto; }
+#list, #filter, #webshare { background: url(../images/bg-cuyamaca-light.jpg) no-repeat top center #cad2c1; }
+
+#home .content div { position: absolute; top: 0; left: 0; width: 100%; text-align: center; margin: 120px 0 0; }
+#home .content div h1 { text-indent: -9999px; width: 296px; height: 57px; background: url(../images/logo-lg.png) no-repeat; margin: 0 auto 20px; }
+#home .content div h2 { text-indent: -9999px; width: 310px; height: 74px; background: url(../images/home-cuyamaca.png) no-repeat; margin: 0 auto; }
+
+#filter .content { text-align: center; }
+#filter .content ul { margin: 0 auto 20px; padding: 0 10px; text-align: left; }
+#filter .content li { margin: 0; padding: 10px 0; list-style-type: none; }
+#filter .content li a { display: block; width: 100%; padding-left: 80px; font-size: 50px; color: #666; text-decoration: none; background: url(../images/badges.png) no-repeat; text-shadow: none; line-height: 53px; }
+#filter .content li a:hover,
+#filter .content li a.on { color: #000; text-shadow: 0px 0px 10px #fff; }
+#filter .content li.plants a { background-position: 0 -159px; }
+#filter .content li.plants a.on { background-position: 0 0; }
+#filter .content li.animals a { background-position: 0 -212px; }
+#filter .content li.animals a.on { background-position: 0 -53px; }
+#filter .content li.hikes a { background-position: 0 -265px; }
+#filter .content li.hikes a.on { background-position: 0 -106px; }
+
+/*#filter .content li a { display: block; float: left; padding: 5px 0 0 0; width: 280px; height: 53px; font-size: 50px; color: #333; text-decoration: none; }
+#filter .content li a:hover,
+#filter .content li a:active { color: #000; }
+#filter .content li span.badge { display: block; float: left; width: 69px; height: 53px; background: url(../images/badges.png) no-repeat top left; }
+#filter .content li.plants span.badge { background-position: 0 0; }
+#filter .content li.animals span.badge { background-position: 0 -53px; }
+#filter .content li.hikes span.badge { background-position: 0 -106px; }
+#filter .content li a span.check { display: block; float: left; padding: 3px; margin: -5px 20px 0 0; background: #639ac6; border: solid 3px #fff; -webkit-box-shadow: 3px 3px 4px #666; box-shadow: 3px 3px 4px #666; }
+#filter .content li a span.check span { display: block; width: 38px; height: 38px; background: url(../images/xs.png) no-repeat 0 -38px; }
+#filter .content li a.on span.check span { display: block; width: 38px; height: 38px; background: url(../images/xs.png) no-repeat 0 0; }*/
+
+#list .content { position: relative; overflow: auto; width: 100%; padding-right: 20px; }
+#list .content a { display: block; float: left; margin: 0 0 20px 20px; border: solid 2px #fff; -webkit-box-shadow: 3px 3px 4px #666; box-shadow: 3px 3px 4px #666; background: #fff; color: #333; font-size: 9px; text-align: center; font-weight: bold; text-decoration: none; text-shadow: none; }
+#list .content a:hover { background: #333; color: #fff; border-color: #333; }
+#list .content a img { display: block; margin-bottom: 4px; }
+	
+.item { background: #000; } 	
+.item .ui-content { padding: 0; }	
+.item .content { text-align: center; background: #000; }
+.item .content img.main { margin: 0 auto; height: auto; visibility: hidden; }
+
+.item .content .details { position: absolute; bottom: 0; left: 0; padding: 0 10px; text-align: left; background-color:rgba(0,0,0,0.5); border-top: solid 2px #fff; }
+.item .content .details h2 { margin: 10px auto; color: #fff; text-shadow: none; }
+.item .content .details p { color: #fff; text-shadow: none; }
+.item .content .details div.alt_imgs { float: right; }
+.item .content .details div.alt_imgs a img { width: 50px; border: solid 2px #000; margin: 0 5px 5px 5px; -webkit-box-shadow: 3px 3px 4px #000; box-shadow: 3px 3px 4px #000; }
+.item .content .details div.alt_imgs a.on img { border: solid 2px #fff; -webkit-box-shadow: 3px 3px 4px #000; box-shadow: 3px 3px 4px #000; }/*FFD700*/

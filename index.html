@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>NatureScout</title>
+
+	<link rel="stylesheet"  href="jquery.mobile/jquery.mobile-1.1.0.css" />
+	<link rel="stylesheet" href="css/styles.css" />
+	<script type="text/javascript" src="jquery.mobile/jquery-1.7.2.min.js"></script>
+	<script type="text/javascript" src="jquery.mobile/jquery.mobile-1.1.0.js"></script>
+	<!-- Uncomment following line to access PhoneGap APIs (not necessary to use PhoneGap to package web app) -->
+	<!-- <script type="text/javascript" charset="utf-8" src="cordova-1.6.1.js"></script>-->
+	<script type="text/javascript" src="js/scripts.js"></script>
+</head> 
+<body> 
+	<div data-role="page" id="home" data-theme="b">
+		<div data-role="content">
+			
+			<div class="content">
+				<div>
+					<h1>NatureScout</h1>
+					<h2>Cuyamaca State Park</h2>
+					<!-- <a href="#list" data-role="button" data-inline="true">start</a> -->
+				</div>
+			</div>
+			
+		</div>
+		<!-- 
+		<div data-role="footer" class="footer-docs" data-theme="c">
+				<p>&copy; 2011 The jQuery Project</p>
+		</div>	
+		-->
+	</div>
+	<div data-role="page" id="filter" data-title="Item Filter" data-theme="b">
+		<div data-role="header" data-position="inline" data-theme="b" data-position="fixed">
+			<h1 class="header-logo">NatureScout</h1>
+			<a href="#webshare" data-direction="back" data-icon="star">Share</a>
+		</div><!-- /header -->
+	
+		<div data-role="content">
+			<div class="content">
+				<ul>
+					<li class="plants"><a href="javascript:;" class="on">Plants</a></li>
+					<li class="animals"><a href="javascript:;">Animals</a></li>
+					<li class="hikes"><a href="javascript:;">Hikes</a></li>
+					<!-- 
+					<li class="plants"><a href="javascript:;" class="on"><span class="check"><span></span></span>Plants</a></li><!-- <span class="badge"></span> -- >
+					<li class="animals"><a href="javascript:;"><span class="check"><span></span></span>Animals</a></li>
+					<li class="hikes"><a href="javascript:;"><span class="check"><span></span></span>Hikes</a></li>
+					 -->
+				</ul>
+				<a href="#list" id="go-btn" data-role="button">GO</a>
+			</div>
+		</div>
+	</div>
+	<div data-role="page" id="list" data-title="Item List" data-theme="b">
+		<div data-role="header" data-position="inline" data-theme="b" data-position="fixed">
+			<a href="#filter" data-direction="back" data-icon="back">Back</a>
+			<h1 class="header-logo">NatureScout</h1>
+		</div><!-- /header -->
+	
+		<div data-role="content">
+			<div class="content">
+				<!-- load up the thumbnail page links here -->
+			</div>
+			<!-- <a href="#home" data-direction="back" data-role="button">home</a> -->
+		</div>
+	</div>
+	
+	<div data-role="page" id="webshare" data-title="Share Via Web" data-theme="b">
+		<div data-role="header" data-position="inline" data-theme="b" data-position="fixed">
+			<a href="#filter" data-direction="back" data-icon="back">Back</a>
+			<h1 class="header-logo">NatureScout</h1>
+		</div><!-- /header -->
+	
+		<div data-role="content">
+			<div class="content">
+				<img src="images/qr-code-web.png" />
+			</div>
+			<!-- <a href="#home" data-direction="back" data-role="button">home</a> -->
+		</div>
+	</div>
+	
+	<!-- <div data-role="page" id="woolydaisy" class="item" data-title="Item Detail" data-theme="b">
+		<div data-role="header" data-position="inline" data-theme="b">
+			<a href="#list" data-direction="back" data-icon="grid" data-iconpos="notext">list</a>
+			<h1 class="header-logo">NatureScount</h1>
+			<a href="javascript:navigator.app.exitApp();" data-icon="search" data-iconpos="notext">Search</a>
+		</div>
+	
+		<div data-role="content">
+			<div class="content">
+				<img src="images/woolydaisy.jpg" />
+				<div class="details">
+					<h2>Wooly Daisy</h2>
+					<p>Really small</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	-->
+	<script type="text/javascript" src="js/itemData.js"></script>	
+</body>
+</html>
